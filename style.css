@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+
+
+/* ----------------------------------------------- */
+
+@font-face {
+  src: url(./fonts/Alumatica-Regular.ttf);
+  font-family: "Alumatica-Regular";
+}
+
+@font-face {
+  src: url(./fonts/ProximaNova-Light.ttf);
+  font-family: "fonts/ProximaNova-Light";
+}
+
+
+/* ---------------- header ------------------- */
+
+
+.header__row {
+  padding-top: 20px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__links a {
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  color: white;
+  font-family: "Alumatica-Regular";
+  font-weight: 800;
+}
+
+.header__logo {
+  width: 180px;
+}
+
+/* main style */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Alumatica-Regular";
+}
+
+/* ------------------------- better place section ----------------------- */
+
+
+.better__place {
+  background-image: url(./img/main__bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.better__place__container {
+  color: white;
+  padding: 300px 0px;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Alumatica-Regular";
+}
+
+.better__place__info__block {
+  width: 430px;
+}
+
+.better__place__title {
+  font-weight: 800;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.better__place__subtitle {
+  letter-spacing: .09rem;
+  font-weight: 800;
+  margin: 40px 0px;
+  font-size: 3.3rem;
+  line-height: 55px;
+}
+
+.better__place__button {
+  font-size: .7rem;
+  background-color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.better__place__button p {
+  color: rgb(27, 27, 27);
+  font-family: "Alumatica-Regular";
+  letter-spacing: .09rem;
+}
+
+.better__place__button img {
+  margin-right: 5px;
+}
+
+
+/* -------------------------- advantages section ------------------------------- */
+
+
+.advantages__container {
+  padding: 50px 0px 200px 0px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.advantages__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.column__img img {
+  width: 300px;
+}
+
+.column__img {
+  margin-bottom: 50px;
+}
+
+.column__title {
+  margin-bottom: 20px;
+  font-family: "Alumatica-Regular";
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+}
+
+.column__text {
+  line-height: 30px;
+  font-family: "fonts/ProximaNova-Light";
+  font-weight: 400;
+  text-align: center;
+}
+
+.column__text a {
+  color: #C33E3F;
+}
+
+/* ------------------------------ our mission section -------------------------- */
+
+
+
+.our__mission {
+  background-image: url(./img/section__bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.our__mission__container {
+  padding: 180px 0px 100px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.our__mission__info__block {
+  text-align: center;
+  font-family: "Alumatica-Regular";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.our__mission__title {
+  font-family: "Alumatica-Regular";
+  letter-spacing: .09rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  line-height: 40px;
+}
+
+.our__mission__text {
+  font-family: "Alumatica-Regular";
+  letter-spacing: .09rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.our__mission__row {
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 180px repeat(4, 1fr);
+  grid-auto-rows: 210px;
+  grid-row-gap: 1em;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item__img {
+  margin-bottom: 25px;
+}
+
+.item__img img {
+  width: 180px;
+}
+
+.item__title {
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+
+
+/* --------------------------------- feedback section ------------------------------- */
+
+
+.feedback {}
+
+.feedback__container {
+  padding: 150px 0px 100px;
+}
+
+.feedback__title {
+  text-align: center;
+  font-family: "Alumatica-Regular";
+  letter-spacing: .09rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  line-height: 40px;
+  color: rgb(89, 89, 89);
+}
+
+
+.feedback__block {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.feedback__block div {
+  margin-bottom: 30px;
+}
+
+.feedback__block p {
+  margin-left: 15px;
+}
+
+.feedback__block a {
+  color: #C33E3F;
+}
+
+
+/* ------------------------------- */
+
+
+.guestions {
+  background: #ECF1F8;
+}
+
+.guestions__container {
+  padding: 150px 0px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.guestions__title {
+  text-align: center;
+  font-family: "Alumatica-Regular";
+  letter-spacing: .09rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  line-height: 40px;
+  color: rgb(89, 89, 89);
+}
+
+.guestions__accordion {
+ display: flex;
+ justify-content: space-between;
+}
+
+.first__column {
+  width: 45%;
+}
+
+.second__column {
+  width: 45%;
+}
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #565656;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab a  {
+  color: #C33E3F;
+}
+
+.tab label {
+  position: relative;
+  display: block;
+
+  font-weight: bold;
+line-height: 2;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.tab-content p {
+  font-size: 1.1rem;
+  border-top: #b5b5b5 solid 1px;
+  padding: 20px 0px;
+}
+
+ .tab input:checked~.tab-content {
+  max-height: 100vh;
+}
+
+.tab input[type=checkbox]+label::before {
+  content: "+";
+  color: #C33E3F;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
