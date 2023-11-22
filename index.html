@@ -4,22 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Upstate Laundromat</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__row">
       <nav class="header__navigation">
+        <div class="burder__menu">
+          <ul class="menu">
+            <img src="./img/upstate-laundromat-logo.png" alt="logo">
+            <li><a class="menuItem" href="#">SERVICES</a></li>
+            <li><a class="menuItem" href="#">AMENITIES</a></li>
+            <li><a class="menuItem" href="#">TESTIMONIALS</a></li>
+            <li><a class="menuItem" href="#">FAQ</a></li>
+            <li><a class="menuItem" href="#">CONTACT</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+        <a href="#"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__Logo"></a>
         <ul class="header__links">
           <a href="#"><img src="./img/home-page.png" alt="house"></a>
-          <li><a href="">SERVICES</a></li>
-          <li><a href="">AMENITIES</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#amenities">AMENITIES</a></li>
           <a href="#"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__logo"></a>
-          <li><a href="">TESTIMONIALS</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -44,7 +61,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="services">
       <div class="advantages__container">
         <div class="advantages__row">
           <div class="advantages__column">
@@ -89,7 +106,7 @@
       </div>
     </section>
 
-    <section class="our__mission">
+    <section class="our__mission" id="amenities">
       <div class="our__mission__container">
         <div class="our__mission__info__block">
           <h2 class="our__mission__title">
@@ -149,7 +166,7 @@
             <h3 class="item__title">ON-SITE <br> ATTENDANT</h3>
           </div>
 
-          <div class="item">
+          <div class="item last__item">
             <div class="item__img"><img src="./img/icons/security-camera-icon.png" alt="security-camera"></div>
             <h3 class="item__title">SECURITY <br> CAMERAS</h3>
           </div>
@@ -158,7 +175,7 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="testimonials">
       <div class="feedback__container">
         <h2 class="feedback__title">
           What People Are Saying
@@ -171,8 +188,7 @@
       </div>
     </section>
 
-
-    <section class="guestions">
+    <section class="guestions" id="faq">
       <div class="guestions__container">
         <h2 class="guestions__title">
           Frequently Asked Questions
@@ -182,16 +198,16 @@
 
           <div class="first__column">
             <div class="tab">
-              <input id="tab-one" type="checkbox" name="tabs">
-              <label for="tab-one">What are your hours?</label>
+              <input id="1" type="checkbox" name="tabs">
+              <label for="1">What are your hours?</label>
               <div class="tab-content">
                 <p>We're open 7 days/week from 8am to 10pm.</p>
               </div>
             </div>
 
             <div class="tab">
-              <input id="tab-two" type="checkbox" name="tabs">
-              <label for="tab-two">What is the last wash time?</label>
+              <input id="2" type="checkbox" name="tabs">
+              <label for="2">What is the last wash time?</label>
               <div class="tab-content">
                 <p>The posted time for starting the last wash is 9:00 PM. This typically allows enough time for our
                   customers to finish washing, drying and folding their clothes by 10:00 PM.</p>
@@ -199,8 +215,8 @@
             </div>
 
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> Is coin-less laundry really coin-less?</label>
+              <input id="3" type="checkbox" name="tabs">
+              <label for="3"> Is coin-less laundry really coin-less?</label>
               <div class="tab-content">
                 <p>All the machines work with a laundry card – you don’t need to bring quarters. You can use cash, VISA
                   or MasterCard to add value to a laundry card that may be re-loaded as you use up the balance on your
@@ -209,8 +225,8 @@
             </div>
 
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three">How do I get a new laundry card?</label>
+              <input id="4" type="checkbox" name="tabs">
+              <label for="4">How do I get a new laundry card?</label>
               <div class="tab-content">
                 <p>You may get a laundry card by visiting the VTM (Value Transfer Machine) at the back of the store.
                   Follow the simple steps to get a laundry card and add value by inserting cash, VISA or MasterCard. You
@@ -221,8 +237,8 @@
             </div>
 
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three">How do I add money to the card?</label>
+              <input id="5" type="checkbox" name="tabs">
+              <label for="5">How do I add money to the card?</label>
               <div class="tab-content">
                 <p>You can add money to your card using cash, VISA or MasterCard at the VTM (Value Transfer Machine)
                   next to the office. Please see the attendant if you need any assistance with your transaction. You can
@@ -232,8 +248,8 @@
             </div>
 
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> Is my laundry card reusable/reloadable?</label>
+              <input id="6" type="checkbox" name="tabs">
+              <label for="6"> Is my laundry card reusable/reloadable?</label>
               <div class="tab-content">
                 <p>Yes, the card will retain any unused balance for future visits and can be reused and reloaded as
                   often as needed. You can reload your Fascard by <a href="#">clicking here</a> or download their app in
@@ -243,20 +259,22 @@
             </div>
           </div>
 
+
           <div class="second__column">
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> How do I register my laundry card?</label>
+              <input id="7" type="checkbox" name="tabs">
+              <label for="7"> How do I register my laundry card?</label>
               <div class="tab-content">
                 <p>Registration can be completed by downloading the FasCard Mobile App, or by <a href="#">clicking here
-                  </a> Registration is very important because it allows you to receive dicounts throughout the year and if
+                  </a> Registration is very important because it allows you to receive dicounts throughout the year and
+                  if
                   you lose your laundry card we can trasnfer the money to a new one.</p>
               </div>
             </div>
-  
+
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> Why is the front load washer often a better choice?</label>
+              <input id="8" type="checkbox" name="tabs">
+              <label for="8"> Why is the front load washer often a better choice?</label>
               <div class="tab-content">
                 <p>Top load washers are smaller capacity and less efficient. Front washers provide a better wash and are
                   gentler on your garments due to their tumbling action. They need less soap (for example a double load
@@ -264,56 +282,121 @@
                   more environmentally friendly.</p>
               </div>
             </div>
-  
+
             <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> Can I wash my pillows in a front load washer?</label>
+              <input id="9" type="checkbox" name="tabs">
+              <label for="9"> Can I wash my pillows in a front load washer?</label>
               <div class="tab-content">
                 <p>You can – but you need to aware of a few things. Pillows can sometimes be damaged during wash and may
                   lose stuffing or lose it’s shape. Please use your best judgment.</p>
               </div>
-            </div>
-  
-            <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> Can I wash a down comforter?</label>
-              <div class="tab-content">
-                <p>Comforters with down fillings take longer to dry. You may need to air dry them at home to get the
-                  moisture out. Please take care to dry them completely to prevent mildew.</p>
+
+              <div class="tab">
+                <input id="10" type="checkbox" name="tabs">
+                <label for="10"> Can I wash my pillows in a front load washer?</label>
+                <div class="tab-content">
+                  <p>You can – but you need to aware of a few things. Pillows can sometimes be damaged during wash and
+                    may
+                    lose stuffing or lose it’s shape. Please use your best judgment.</p>
+                </div>
               </div>
-            </div>
-  
-            <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> How do I add time to the dryers?</label>
-              <div class="tab-content">
-                <p>You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
-                  desired drying time is reached. Then press the START button. Please remember to take the card with you
-                  when you are done adding time to the dryer.</p>
+
+              <div class="tab">
+                <input id="11" type="checkbox" name="tabs">
+                <label for="11"> How do I add time to the dryers?</label>
+                <div class="tab-content">
+                  <p>You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
+                    desired drying time is reached. Then press the START button. Please remember to take the card with
+                    you
+                    when you are done adding time to the dryer.</p>
+                </div>
               </div>
-            </div>
-  
-            <div class="tab">
-              <input id="tab-three" type="checkbox" name="tabs">
-              <label for="tab-three"> What items should NOT be put in the dryer?</label>
-              <div class="tab-content">
-                <p>Anything with rubber should NOT be placed into the dryers on any temperature other than “air dry”. This
-                  includes all shoes and rugs with rubber backing, or any other item that is made with any rubber or
-                  plastic materials. They may become damaged and misshapen after being placed in the dryer. Items
-                  containing rubber or plastic are not permitted in the dryers for this reason.</p>
+
+              <div class="tab">
+                <input id="12" type="checkbox" name="tabs">
+                <label for="12"> How do I add time to the dryers?</label>
+                <div class="tab-content">
+                  <p>You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
+                    desired drying time is reached. Then press the START button. Please remember to take the card with
+                    you
+                    when you are done adding time to the dryer.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__info__block">
+          <h2 class="contact__title">
+            Contact
+          </h2>
+          <div class="facebook">
+            <a href="#"><img src="./img/free-icon-facebook-145802.png" alt="facebook"></a>
+          </div>
+          <div class="contact__info">
+            <div class="contact__info__title">
+              <img src="./img/location-sign.png" alt="location">
+              <p>LOCATION</p>
+            </div>
+            <p class="contact__info__text"> 2600 Anderson Rd <br> Greenville, SC 29611 </p>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__info__title">
+              <img src="./img/city-building.png" alt="building">
+              <p>HOURS</p>
+            </div>
+            <p class="contact__info__text"> Open every day from 8am-10pm <br> (Last wash at 8pm) </p>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__info__title">
+              <img src="./img/close-envelope.png" alt="envelope">
+              <p>EMAIL</p>
+            </div>
+            <p class="contact__info__text"> <a href="#">info@upstatelaundromat.com</a></p>
+          </div>
+
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26206.317396422426!2d-82.44043300000001!3d34.811233!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700591590659!5m2!1sen!2sus"
+           style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
 
-
-
-
-
   </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+
+      <h2 class="footer__title">Join our mailing list for 10% off!</h2>
+
+      <form class="email__form" action="/submit_email" method="post">
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <button type="submit">sign up</button>
+      </form>
+
+      <div class="footer__info__block">
+        <small>
+          info@upstatelaundromat.com | 2600 Anderson Rd, Greenville SC 29611 <br>
+          © 2018 Upstate Laundromat. All rights reserved. Site by <a href="#">Knapsack.</a>
+        </small>
+      </div>
+
+      <div class="footer__logo">
+        <img src="./img/u-logo.png" alt="logo">
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
   <script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=2b1f0c8d5089bac18bcec23592d884f4"
     type="text/javascript"></script>
 </body>
