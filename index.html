@@ -11,19 +11,34 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__row">
-      <nav class="header__navigation">
+<div class="adnim__panel">
+  <div id='admin-panel'>You are admin!</div>
 
+<button id='login'>Login</button>
+<button id='save'>Save</button>
+<button id='clear'>Clear Data</button>
+<button id='exit'>Exit</button>
+
+</div>
+
+  <header class="header">
+
+    <div class="header__row">
+      
         <!-- burger menu -->
         <div class="burder__menu">
           <ul class="menu">
-            <img src="./img/upstate-laundromat-logo.png" alt="logo">
-            <li><a class="menuItem" href="#">SERVICES</a></li>
-            <li><a class="menuItem" href="#">AMENITIES</a></li>
-            <li><a class="menuItem" href="#">TESTIMONIALS</a></li>
-            <li><a class="menuItem" href="#">FAQ</a></li>
-            <li><a class="menuItem" href="#">CONTACT</a></li>
+          <li class="menu__close">
+            <button class="hamburger">
+              <i class="closeIcon material-icons">close</i>
+            </button>
+          </li>
+          <li><img src="./img/upstate-laundromat-logo.png" alt="logo"></li>
+          <li><a href="#services" class="menuItem">SERVICES</a></li>
+          <li><a href="#amenities" class="menuItem">AMENITIES</a></li>
+          <li><a href="#testimonials" class="menuItem">TESTIMONIALS</a></li>
+          <li><a href="#faq" class="menuItem">FAQ</a></li>
+          <li><a href="#contact" class="menuItem">CONTACT</a></li>
           </ul>
           <button class="hamburger">
             <i class="menuIcon material-icons">menu</i>
@@ -31,12 +46,42 @@
           </button>
         </div>
 
-        <a href="#"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__Logo"></a>
+        <a href="#main"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__Logo"></a>
+      <nav class="header__navigation">
         <ul class="header__links">
-          <a href="#"><img src="./img/home-page.png" alt="house"></a>
+          <li>
+            <a class="no-hover" href="#main">
+              <img src="./img/home-page.png" alt="house">
+            </a>
+          </li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#amenities">AMENITIES</a></li>
-          <a href="#main"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__logo"></a>
+          <li>
+            <a class="no-hover" href="#main">
+              <img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__logo">
+            </a>
+          </li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <!-- the header that appears when scrolling to the second section -->
+    <div class="new__header__row">
+      <div class="burder__menu">
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
+      <nav class="header__navigation">
+        <ul class="new__header__links">
+          <li><a href="#main"><img src="./img/home-page.png" alt="house"></a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#amenities">AMENITIES</a></li>
           <li><a href="#testimonials">TESTIMONIALS</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -44,7 +89,6 @@
       </nav>
     </div>
 
-   
   </header>
 
   <main class="wrapper">
@@ -52,59 +96,36 @@
     <section class="better__place" id="main">
       <div class="better__place__container">
         <div class="better__place__info__block">
-          <h2 class="better__place__title">
-            MODERN & UPSCALE LAUNDROMAT
-          </h2>
-          <h1 class="better__place__subtitle">
-            A Better Place to do Your Laundry
-          </h1>
-          <button class="better__place__button">
-            <img src="./img/location-sign.png" alt="location-sign">
-            <p> VIEW LOCATION </p>
-          </button>
+          <div>
+            <h1  id="modernLaundromatTitle" class="better__place__title isEditable">
+              MODERN & UPSCALE LAUNDROMAT
+            </h1>
+          </div>
+          <div>
+            <h2  id="betterPlaceSubtitle" class="better__place__subtitle isEditable">
+              A Better Place to do Your Laundry
+            </h2>
+          </div>
+          <div><a href="#contact" class="better__place__button">
+              <img src="./img/location-sign.png" alt="location-sign">
+              <span> VIEW LOCATION </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="advantages" id="services">
-       <!-- the header that appears when scrolling to the second section -->
-    <div class="new__header__row">
-      <nav class="header__navigation">
-        <div class="burder__menu">
-          <ul class="menu">
-            <img src="./img/upstate-laundromat-logo.png" alt="logo">
-            <li><a class="menuItem" href="#">SERVICES</a></li>
-            <li><a class="menuItem" href="#">AMENITIES</a></li>
-            <li><a class="menuItem" href="#">TESTIMONIALS</a></li>
-            <li><a class="menuItem" href="#">FAQ</a></li>
-            <li><a class="menuItem" href="#">CONTACT</a></li>
-          </ul>
-          <button class="hamburger">
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-          </button>
-        </div>
-        <a href="#"><img src="./img/upstate-laundromat-logo.png" alt="header logo" class="header__Logo"></a>
-        <ul class="new__header__links">
-          <a href="#"><img src="./img/home-page.png" alt="house"></a>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#amenities">AMENITIES</a></li>
-          <li><a href="#testimonials">TESTIMONIALS</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
       <div class="advantages__container">
         <div class="advantages__row">
           <div class="advantages__column">
             <div class="column__img">
               <img src="./img/self-serve-icon.png" alt="self-serve">
             </div>
-            <h3 class="column__title">
+            <h3 id="coinMachinesTitle" class="column__title isEditable">
               COIN & COINLESS MACHINES
             </h3>
-            <p class="column__text">
+            <p id="coinMachinesText" class="column__text isEditable">
               Our environmentally friendly Huebsch® machines use less water and dry faster so you are done fast! You can
               pay with coins, the Upstate Laundromat loyalty card, Visa, or MasterCard.
             </p>
@@ -114,10 +135,10 @@
             <div class="column__img">
               <img src="./img/folded-shirt-icon.png" alt="shirt">
             </div>
-            <h3 class="column__title">
+            <h3  id="fluffFoldServiceTitle" class="column__title isEditable">
               FLUFF & FOLD SERVICE AVAILABLE
             </h3>
-            <p class="column__text">
+            <p id="fluffFoldServiceText" class="column__text isEditable">
               Don’t waste valuable time doing your own laundry. Let us handle it for you! Offered 7 days a week, same
               day or next day available. We will notify you when your laundry is done via text.
             </p>
@@ -127,10 +148,10 @@
             <div class="column__img">
               <img src="./img/loyalty-card-icon.png" alt="loyalty-card">
             </div>
-            <h3 class="column__title">
+            <h3 id="loyaltyDiscountsTitle" class="column__title isEditable">
               LOYALTY DISCOUNTS
             </h3>
-            <p class="column__text">
+            <p id="loyaltyDiscountsText" class="column__text isEditable">
               Use your Upstate Laundromat personal loyalty card to earn special discounts over time. Make sure to
               register your card by <span><a href="#">clicking here</a></span> or by downloading the Fascard Mobile app.
             </p>
@@ -142,11 +163,11 @@
     <section class="our__mission" id="amenities">
       <div class="our__mission__container">
         <div class="our__mission__info__block">
-          <h2 class="our__mission__title">
+          <h2 id="changeLaundromatExperienceTitle" class="our__mission__title isEditable">
             We are on a mission to change the laundromat experience
           </h2>
 
-          <p class="our__mission__text">
+          <p id="offerText" class="our__mission__text isEditable">
             Here's what we offer:
           </p>
 
@@ -210,7 +231,7 @@
 
     <section class="feedback" id="testimonials">
       <div class="feedback__container">
-        <h2 class="feedback__title">
+        <h2 id="peopleSayingTitle" class="feedback__title isEditable">
           What People Are Saying
         </h2>
         <div class="feedback__block">
@@ -232,26 +253,26 @@
           <div class="first__column">
             <div class="tab">
               <input id="1" type="checkbox" name="tabs">
-              <label for="1">What are your hours?</label>
+              <label id="hoursQuestion" class="isEditable" for="1">What are your hours?</label>
               <div class="tab-content">
-                <p>We're open 7 days/week from 8am to 10pm.</p>
+                <p id="hoursAnswer" class="isEditable" >We're open 7 days/week from 8am to 10pm.</p>
               </div>
             </div>
 
             <div class="tab">
               <input id="2" type="checkbox" name="tabs">
-              <label for="2">What is the last wash time?</label>
+              <label id="lastWashTimeQuestion" class="isEditable" for="2">What is the last wash time?</label>
               <div class="tab-content">
-                <p>The posted time for starting the last wash is 9:00 PM. This typically allows enough time for our
+                <p id="lastWashTimeAnswer" class="isEditable" >The posted time for starting the last wash is 9:00 PM. This typically allows enough time for our
                   customers to finish washing, drying and folding their clothes by 10:00 PM.</p>
               </div>
             </div>
 
             <div class="tab">
               <input id="3" type="checkbox" name="tabs">
-              <label for="3"> Is coin-less laundry really coin-less?</label>
+              <label id="coinlessLaundryQuestion" class="isEditable" for="3"> Is coin-less laundry really coin-less?</label>
               <div class="tab-content">
-                <p>All the machines work with a laundry card – you don’t need to bring quarters. You can use cash, VISA
+                <p id="coinlessLaundryAnswer" class="isEditable">All the machines work with a laundry card – you don’t need to bring quarters. You can use cash, VISA
                   or MasterCard to add value to a laundry card that may be re-loaded as you use up the balance on your
                   card.</p>
               </div>
@@ -259,9 +280,9 @@
 
             <div class="tab">
               <input id="4" type="checkbox" name="tabs">
-              <label for="4">How do I get a new laundry card?</label>
+              <label id="newLaundryCardQuestion" class="isEditable" for="4">How do I get a new laundry card?</label>
               <div class="tab-content">
-                <p>You may get a laundry card by visiting the VTM (Value Transfer Machine) at the back of the store.
+                <p id="newLaundryCardAnswer" class="isEditable">You may get a laundry card by visiting the VTM (Value Transfer Machine) at the back of the store.
                   Follow the simple steps to get a laundry card and add value by inserting cash, VISA or MasterCard. You
                   can add money to the card as needed. Our friendly staff is always available to assist you if you need
                   help with your transaction. There is also an available mobile app, directions can be loacted near the
@@ -271,9 +292,9 @@
 
             <div class="tab">
               <input id="5" type="checkbox" name="tabs">
-              <label for="5">How do I add money to the card?</label>
+              <label id="addMoneyToCardQuestion" class="isEditable" for="5">How do I add money to the card?</label>
               <div class="tab-content">
-                <p>You can add money to your card using cash, VISA or MasterCard at the VTM (Value Transfer Machine)
+                <p  id="addMoneyToCardAnswer" class="isEditable" >You can add money to your card using cash, VISA or MasterCard at the VTM (Value Transfer Machine)
                   next to the office. Please see the attendant if you need any assistance with your transaction. You can
                   also register your card with Fascard by <a href="#">clicking here </a> or by downloading the Fascard
                   Mobile Apple with Apple & Android</p>
@@ -282,9 +303,9 @@
 
             <div class="tab">
               <input id="6" type="checkbox" name="tabs">
-              <label for="6"> Is my laundry card reusable/reloadable?</label>
+              <label id="reusableLaundryCardQuestion" class="isEditable" for="6"> Is my laundry card reusable/reloadable?</label>
               <div class="tab-content">
-                <p>Yes, the card will retain any unused balance for future visits and can be reused and reloaded as
+                <p id="reusableLaundryCardAnswer" class="isEditable" >Yes, the card will retain any unused balance for future visits and can be reused and reloaded as
                   often as needed. You can reload your Fascard by <a href="#">clicking here</a> or download their app in
                   your devices app store. Please note that other laudromats use the same system, however our cards only
                   work at our location.</p>
@@ -296,9 +317,9 @@
           <div class="second__column">
             <div class="tab">
               <input id="7" type="checkbox" name="tabs">
-              <label for="7"> How do I register my laundry card?</label>
+              <label id="registerLaundryCardQuestion" class="isEditable" for="7"> How do I register my laundry card?</label>
               <div class="tab-content">
-                <p>Registration can be completed by downloading the FasCard Mobile App, or by <a href="#">clicking here
+                <p id="registerLaundryCardAnswer" class="isEditable" >Registration can be completed by downloading the FasCard Mobile App, or by <a href="#">clicking here
                   </a> Registration is very important because it allows you to receive dicounts throughout the year and
                   if
                   you lose your laundry card we can trasnfer the money to a new one.</p>
@@ -307,9 +328,9 @@
 
             <div class="tab">
               <input id="8" type="checkbox" name="tabs">
-              <label for="8"> Why is the front load washer often a better choice?</label>
+              <label id="frontLoadWasherChoiceQuestion" class="isEditable" for="8"> Why is the front load washer often a better choice?</label>
               <div class="tab-content">
-                <p>Top load washers are smaller capacity and less efficient. Front washers provide a better wash and are
+                <p id="frontLoadWasherChoiceAnswer" class="isEditable" >Top load washers are smaller capacity and less efficient. Front washers provide a better wash and are
                   gentler on your garments due to their tumbling action. They need less soap (for example a double load
                   front load washer will need about 1 1/2 load’s worth of soap). Front load washers are better value and
                   more environmentally friendly.</p>
@@ -318,27 +339,25 @@
 
             <div class="tab">
               <input id="9" type="checkbox" name="tabs">
-              <label for="9"> Can I wash my pillows in a front load washer?</label>
+              <label id="washPillowsFrontLoadQuestion" class="isEditable" for="9"> Can I wash my pillows in a front load washer?</label>
               <div class="tab-content">
-                <p>You can – but you need to aware of a few things. Pillows can sometimes be damaged during wash and may
+                <p id="washPillowsFrontLoadAnswer" class="isEditable" >You can – but you need to aware of a few things. Pillows can sometimes be damaged during wash and may
                   lose stuffing or lose it’s shape. Please use your best judgment.</p>
               </div>
 
               <div class="tab">
                 <input id="10" type="checkbox" name="tabs">
-                <label for="10"> Can I wash my pillows in a front load washer?</label>
+                <label id="washDownComforterQuestion" class="isEditable" for="10"> Can I wash a down comforter?</label>
                 <div class="tab-content">
-                  <p>You can – but you need to aware of a few things. Pillows can sometimes be damaged during wash and
-                    may
-                    lose stuffing or lose it’s shape. Please use your best judgment.</p>
+                  <p id="washDownComforterAnswer" class="isEditable" >Comforters with down fillings take longer to dry. You may need to air dry them at home to get the moisture out. Please take care to dry them completely to prevent mildew.</p>
                 </div>
               </div>
 
               <div class="tab">
                 <input id="11" type="checkbox" name="tabs">
-                <label for="11"> How do I add time to the dryers?</label>
+                <label  id="addTimeToDryersQuestion" class="isEditable" for="11"> How do I add time to the dryers?</label>
                 <div class="tab-content">
-                  <p>You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
+                  <p id="addTimeToDryersAnswer" class="isEditable" >You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
                     desired drying time is reached. Then press the START button. Please remember to take the card with
                     you
                     when you are done adding time to the dryer.</p>
@@ -347,12 +366,9 @@
 
               <div class="tab">
                 <input id="12" type="checkbox" name="tabs">
-                <label for="12"> How do I add time to the dryers?</label>
+                <label id="notInDryerQuestion" class="isEditable" for="12"> What items should NOT be put in the dryer?</label>
                 <div class="tab-content">
-                  <p>You can add any amount of time to the dryer by inserting your laundry card into the dryer until the
-                    desired drying time is reached. Then press the START button. Please remember to take the card with
-                    you
-                    when you are done adding time to the dryer.</p>
+                  <p id="notInDryerAnswer" class="isEditable">Anything with rubber should NOT be placed into the dryers on any temperature other than “air dry”. This includes all shoes and rugs with rubber backing, or any other item that is made with any rubber or plastic materials. They may become damaged and misshapen after being placed in the dryer. Items containing rubber or plastic are not permitted in the dryers for this reason.</p>
                 </div>
               </div>
             </div>
@@ -375,7 +391,7 @@
               <img src="./img/location-sign.png" alt="location">
               <p>LOCATION</p>
             </div>
-            <p class="contact__info__text"> 2600 Anderson Rd <br> Greenville, SC 29611 </p>
+            <p id="locationText" class="contact__info__text isEditable"> 2600 Anderson Rd <br> Greenville, SC 29611 </p>
           </div>
 
           <div class="contact__info">
@@ -383,7 +399,7 @@
               <img src="./img/city-building.png" alt="building">
               <p>HOURS</p>
             </div>
-            <p class="contact__info__text"> Open every day from 8am-10pm <br> (Last wash at 8pm) </p>
+            <p id="hoursText" class="contact__info__text isEditable"> Open every day from 8am-10pm <br> (Last wash at 8pm) </p>
           </div>
 
           <div class="contact__info">
@@ -391,15 +407,14 @@
               <img src="./img/close-envelope.png" alt="envelope">
               <p>EMAIL</p>
             </div>
-            <p class="contact__info__text"> <a href="#">info@upstatelaundromat.com</a></p>
+            <p id="emailText" class="contact__info__text isEditable"> <a href="#">info@upstatelaundromat.com</a></p>
           </div>
 
         </div>
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26206.317396422426!2d-82.44043300000001!3d34.811233!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700591590659!5m2!1sen!2sus"
-           style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -409,7 +424,7 @@
   <footer class="footer">
     <div class="footer__container">
 
-      <h2 class="footer__title">Join our mailing list for 10% off!</h2>
+      <h2  id="mailingListTitle" class="footer__title isEditable">Join our mailing list for 10% off!</h2>
 
       <form class="email__form" action="/submit_email" method="post">
         <input type="email" id="email" name="email" placeholder="Email Address">
@@ -417,7 +432,7 @@
       </form>
 
       <div class="footer__info__block">
-        <small>
+        <small id="footerInfo" class="isEditable">
           info@upstatelaundromat.com | 2600 Anderson Rd, Greenville SC 29611 <br>
           © 2018 Upstate Laundromat. All rights reserved. Site by <a href="#">Knapsack.</a>
         </small>
@@ -429,9 +444,11 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=2b1f0c8d5089bac18bcec23592d884f4"
     type="text/javascript"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
