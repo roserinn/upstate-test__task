@@ -25,43 +25,19 @@ menuItems.forEach(
   }
 )
 
+// -------------- header -----------------
 
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector('.new__header__row');
+  const section2 = document.getElementById('services');
 
-// document.addEventListener("DOMContentLoaded", function() {
-// const menuLinks = document.querySelectorAll('.header__links a');
+  window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
 
-//   menuLinks.forEach(function(link) {
-//     link.addEventListener('click', function(e) {
-//       e.preventDefault();
-
-//       const targetId = this.getAttribute('href').substring(1);
-//       const targetElement = document.getElementById(targetId);
-
-//       window.scrollTo({
-//         top: targetElement.offsetTop,
-//         behavior: 'smooth'
-//       });
-//     });
-//   });
-
-//   window.addEventListener('scroll', function() {
-//     const fromTop = window.scrollY;
-
-//     menuLinks.forEach(function(link) {
-//       const sectionId = link.getAttribute('href').substring(1);
-//      const section = document.getElementById(sectionId);
-
-//       if (
-//         section.offsetTop <= fromTop &&
-//         section.offsetTop + section.offsetHeight > fromTop
-//       ) {
-//         menuLinks.forEach(function(link) {
-//           link.classList.remove('active');
-//         });
-//         link.classList.add('active');
-//       } else {
-//         link.classList.remove('active');
-//       }
-//     });
-//   });
-// });
+    if (scrollPosition >= section2.offsetTop) {
+      header.style.display = 'block';
+    } else {
+      header.style.display = 'none';
+    }
+  });
+});

@@ -106,6 +106,9 @@ h6 {
 
 /* ---------------- header ------------------- */
 
+.header {
+position: relative;
+}
 
 .header__row {
   padding-top: 20px;
@@ -122,11 +125,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-
-.header__links a.active {
-  color: rgb(13, 0, 255);
 }
 
 .header__links a {
@@ -373,6 +371,41 @@ h6 {
 
 
 /* -------------------------- advantages section ------------------------------- */
+
+.advantages {
+  position: relative;
+}
+
+/* the header that appears when scrolling to the second section */
+
+.new__header__row {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -100px;
+  background-color:#C33E3F;
+  width: 100%;
+  display: none;
+ transition: all 0.3s;
+}
+
+.new__header__links{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.new__header__links a {
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  color: white;
+  font-family: "Alumatica-Regular";
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------------- */
 
 
 
