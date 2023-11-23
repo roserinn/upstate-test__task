@@ -212,18 +212,6 @@ h6 {
     display: none;
   }
 
-  /* .hamburger  {
-    color: white;
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    background-color:#C33E3F;
-    cursor: pointer;
-    border: none;
-  } */
-
 }
 
 /* -------------------------------------------------------------- */
@@ -398,22 +386,6 @@ h6 {
   .burder__menu {
     display: block;
   }
-
-  /* .hamburger--background__color {
-    background-color: #C33E3F;
-    
-  } */
-  /* 
-  .hamburger {
-    position: absolute;
-    top: 50px;
-    left: 40px;
-  } */
-
-  /* .header__Logo {
-    left: 70%;
-  } */
-
 }
 
 @media (max-width: 530px) {
@@ -424,12 +396,6 @@ h6 {
   .header__Logo {
     width: 100px;
   }
-
-  /* 
-  .hamburger {
-    position: relative;
-    top: 50px;
-  } */
 
   .header__Logo {
     left: 70%;
