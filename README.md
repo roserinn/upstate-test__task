@@ -1,5 +1,5 @@
 # upstate-test__task
-Дата: 30 листопада 2023 
+Дата: 23 листопада 2023 
 
 Цей веб-сайт представляє собою моє перше тестове завдання в одній з компаній. Під час розробки сайту використовувалися анімації засобами GSAP та було враховано адаптивний дизайн.
 
@@ -13,7 +13,7 @@ GSAP:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 upstate-test__task
-Date: November 30, 2023 
+Date: November 23, 2023 
 
 This website represents my first test assignment in one of the companies. During the development, animations were implemented using GSAP, and the design is adaptive.
 
